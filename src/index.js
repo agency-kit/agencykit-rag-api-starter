@@ -7,8 +7,8 @@ import setupRoutes from './routes.js'
 
 dotenv.config();
 
-const knowledgeBaseRootPath = './knowledge_base'
-// Main server function
+const knowledgeBaseRootPath = './knowledge_base';
+
 async function main() {
   const app = createApp();
 

@@ -1,4 +1,3 @@
-// src/KnowledgeBase.js
 import lunr from 'lunr';
 import fs from 'fs/promises';
 import path from 'path';
@@ -11,7 +10,7 @@ async function readFiles(dir) {
       return readFiles(resPath);
     } else if (resPath.endsWith('.md') || resPath.endsWith('.txt')) {
       const content = await fs.readFile(resPath, 'utf-8');
-      return { file: resPath, content };
+      return { file: resPath, dir: dirent.name, content };
     }
   });
 
@@ -33,9 +32,4 @@ export async function indexKnowledgeBase(root) {
   const files = await readFiles(root);
   const index = await createIndex(files);
   return { index, files };
-}
-
-export async function searchIndex(query, index, files) {
-  const results = index.search(query);
-  return results.map(({ ref }) => files.find(doc => doc.file === ref)?.content).join('\n\n');
 }

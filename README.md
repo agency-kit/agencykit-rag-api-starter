@@ -1,6 +1,12 @@
+<p align="center">
+  <img src="/public/rag_api.png">
+</p>
+
 # AgencyKit RAG API Starter
 
-AgencyKit RAG API Starter is a Node.js project designed to leverage Notion as a queryable knowledge base (via [NotionCMS](https://github.com/agency-kit/notion-cms)) and provide a robust framework for building knowledge bases with rich content. It utilizes the power of OpenAI for processing and generating content based on the knowledge base created from Notion pages. This project is a demo showing how to integrate Notion content into a minimal RAG (retrieval augmented generation) system so you can query your knowledge base.
+AgencyKit RAG API Starter is a Node.js project designed to leverage Notion as a queryable knowledge base (via [NotionCMS](https://github.com/agency-kit/notion-cms)) and provide a robust framework for building dynamic knowledge bases with rich content. It utilizes the power of OpenAI for processing and generating content based on the knowledge base created from Notion pages.
+
+⚠️ This project is a demo showing how to integrate Notion content into a minimal RAG (retrieval augmented generation) system so you can query your knowledge base. ⚠️
 
 ## Features
 
@@ -37,18 +43,14 @@ AgencyKit RAG API Starter is a Node.js project designed to leverage Notion as a 
     ```
 
 4. Populate your Notion database with content and note down the database ID.
+   Don't know how to get that? See [this guide](https://www.agencykit.so/notion-cms/quickstart/#get-database-id).
 
 5. Update the `notionCMSService.js` file with your Notion database ID:
     ```javascript
     databaseId: 'Your_Notion_Database_ID',
     ```
 
-    Don't know how to get that? See [this guide](https://www.agencykit.so/notion-cms/quickstart/#get-database-id).
-
-6. Build the knowledge base from your Notion content:
-    ```bash
-    npm run serve
-    ```
+    Make sure to update your NotionCMS options to match your DB setup. See the full list of options [here](https://www.agencykit.so/notion-cms/guide/api/).
 
 ### Usage
 

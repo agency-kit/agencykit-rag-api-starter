@@ -4,14 +4,12 @@ import path from 'path';
 
 let notionCMS;
 
-// NotionCMS initialization with the plugin
 export async function initNotionCMS(knowledgeBasePath) {
 
   const writeToKnowledgeBasePlugin = {
     name: 'writeToKnowledgeBase',
     hook: 'post-tree',
     exec: async CMS => {
-      // Ensure the knowledge_base directory exists asynchronously
       try {
         await fs.access(knowledgeBasePath);
       } catch (error) {
@@ -40,7 +38,6 @@ export async function initNotionCMS(knowledgeBasePath) {
     localCacheDirectory: `${process.cwd()}/lc/`,
     rootAlias: '/home',
     draftMode: true,
-    quiet: true,
     plugins: [writeToKnowledgeBasePlugin]
   });
 }
