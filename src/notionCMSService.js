@@ -40,6 +40,7 @@ export async function initNotionCMS(knowledgeBasePath) {
     localCacheDirectory: `${process.cwd()}/lc/`,
     rootAlias: '/home',
     draftMode: true,
+    quiet: true,
     plugins: [writeToKnowledgeBasePlugin]
   });
 }

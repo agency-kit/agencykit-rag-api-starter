@@ -5,15 +5,35 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "serve": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@agency-kit/notion-cms": "^0.9.1",
     "dotenv": "^16.4.1",
     "h3": "^1.10.1",
     "lunr": "^2.3.9",
     "openai": "^4.26.0"
-  }
+  },
+  "keywords": [
+    "notion-cms",
+    "content-management-system",
+    "knowledge-base",
+    "openai",
+    "gpt",
+    "api-integration",
+    "nodejs",
+    "agency-toolkit",
+    "web-development",
+    "notion-api",
+    "text-search",
+    "lunr",
+    "h3",
+    "dotenv",
+    "server",
+    "programming",
+    "javascript"
+  ]
 }

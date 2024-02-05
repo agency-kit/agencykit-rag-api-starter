@@ -1,5 +1,0 @@
-AgencyKit’s Notion CMS Posts
-
-AgencyKit is an open source Notion CMS SDK that allows developers to create and manage a website using Notion as the backend. The AgencyKit blog will feature content related to using Notion as a CMS, as well as tutorials and guides for building websites with AgencyKit and Notion.
-
-We will also feature case studies and interviews with developers and businesses that have successfully implemented Notion and AgencyKit in their websites. Our goal is to provide valuable resources and insights for developers and businesses looking to use Notion and AgencyKit to build efficient and scalable websites.
